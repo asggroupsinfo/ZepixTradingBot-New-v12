@@ -1865,3 +1865,198 @@ SL Reduction Settings Loaded:
 2025-12-11 01:12:54 - src.managers.sl_reduction_optimizer - INFO - ✅ SLReductionOptimizer initialized
 2025-12-11 01:12:54 - src.menu.fine_tune_menu_handler - INFO - ✅ FineTuneMenuHandler initialized (Compatible Mode)
 2025-12-11 01:13:01 - src.menu.fine_tune_menu_handler - INFO - ✅ FineTuneMenuHandler initialized (Compatible Mode)
+2025-12-11 01:13:10 - src.clients.telegram_bot - INFO - SUCCESS: Trend manager set in Telegram bot
+2025-12-11 01:13:10 - src.core.trading_engine - INFO - 📋 [RE-ENTRY_CONFIG] Startup Configuration:
+  SL Hunt Enabled: True
+  TP Re-entry Enabled: True
+  Exit Continuation Enabled: True
+  Monitor Interval: 5s
+  SL Hunt Offset: 1.0 pips
+  TP Continuation Gap: 2.0 pips
+  Max Chain Levels: 5
+  SL Reduction Per Level: 0.3
+2025-12-11 01:13:10 - src.services.price_monitor_service - INFO - ✅ Price Monitor Service started successfully - Task created: <Task pending name='Task-3' coro=<PriceMonitorService._monitor_loop() running at C:\Users\Ansh Shivaay Gupta\Downloads\ZepixTradingBot-old-v2-main\ZepixTradingBot-old-v2-main\src\services\price_monitor_service.py:129>>, is_running: True
+2025-12-11 01:13:10 - src.core.trading_engine - INFO - ✅ Price Monitor Service confirmed running after initialization
+2025-12-11 01:13:10 - src.managers.profit_booking_manager - INFO - SUCCESS: Recovered 0 profit booking chains from database
+2025-12-11 01:13:11 - src.clients.telegram_bot - INFO - [POLLING] Starting polling loop...
+2025-12-11 01:13:11 - src.clients.telegram_bot - INFO - SUCCESS: Telegram bot polling started
+2025-12-11 01:13:44 - src.clients.telegram_bot - WARNING - [POLLING] HTTP 409 #1: Webhook conflict - attempting recovery
+2025-12-11 01:13:45 - src.clients.telegram_bot - INFO - [POLLING] HTTP 409 Recovery: Webhook cleared
+2025-12-11 01:14:47 - src.clients.telegram_bot - WARNING - [POLLING] HTTP 409 #1: Webhook conflict - attempting recovery
+2025-12-11 01:14:48 - src.clients.telegram_bot - INFO - [POLLING] HTTP 409 Recovery: Webhook cleared
+2025-12-11 01:15:51 - src.clients.telegram_bot - WARNING - [POLLING] HTTP 409 #1: Webhook conflict - attempting recovery
+2025-12-11 01:15:52 - src.clients.telegram_bot - INFO - [POLLING] HTTP 409 Recovery: Webhook cleared
+2025-12-11 01:16:54 - src.clients.telegram_bot - WARNING - [POLLING] HTTP 409 #1: Webhook conflict - attempting recovery
+2025-12-11 01:16:55 - src.clients.telegram_bot - INFO - [POLLING] HTTP 409 Recovery: Webhook cleared
+2025-12-11 01:17:57 - src.clients.telegram_bot - WARNING - [POLLING] HTTP 409 #1: Webhook conflict - attempting recovery
+2025-12-11 01:17:58 - src.clients.telegram_bot - INFO - [POLLING] HTTP 409 Recovery: Webhook cleared
+2025-12-11 01:19:01 - src.clients.telegram_bot - WARNING - [POLLING] HTTP 409 #1: Webhook conflict - attempting recovery
+2025-12-11 01:19:02 - src.clients.telegram_bot - INFO - [POLLING] HTTP 409 Recovery: Webhook cleared
+2025-12-11 01:20:04 - src.clients.telegram_bot - WARNING - [POLLING] HTTP 409 #1: Webhook conflict - attempting recovery
+2025-12-11 01:20:06 - src.clients.telegram_bot - INFO - [POLLING] HTTP 409 Recovery: Webhook cleared
+2025-12-11 01:21:08 - src.clients.telegram_bot - WARNING - [POLLING] HTTP 409 #1: Webhook conflict - attempting recovery
+2025-12-11 01:21:10 - src.clients.telegram_bot - INFO - [POLLING] HTTP 409 Recovery: Webhook cleared
+2025-12-11 01:22:12 - src.clients.telegram_bot - WARNING - [POLLING] HTTP 409 #1: Webhook conflict - attempting recovery
+2025-12-11 01:22:13 - src.clients.telegram_bot - INFO - [POLLING] HTTP 409 Recovery: Webhook cleared
+2025-12-11 01:23:15 - src.clients.telegram_bot - WARNING - [POLLING] HTTP 409 #1: Webhook conflict - attempting recovery
+2025-12-11 01:23:16 - src.clients.telegram_bot - INFO - [POLLING] HTTP 409 Recovery: Webhook cleared
+2025-12-11 01:24:18 - src.clients.telegram_bot - WARNING - [POLLING] HTTP 409 #1: Webhook conflict - attempting recovery
+2025-12-11 01:24:20 - src.clients.telegram_bot - INFO - [POLLING] HTTP 409 Recovery: Webhook cleared
+2025-12-11 01:25:22 - src.clients.telegram_bot - WARNING - [POLLING] HTTP 409 #1: Webhook conflict - attempting recovery
+2025-12-11 01:25:23 - src.clients.telegram_bot - INFO - [POLLING] HTTP 409 Recovery: Webhook cleared
+2025-12-11 01:26:25 - src.clients.telegram_bot - WARNING - [POLLING] HTTP 409 #1: Webhook conflict - attempting recovery
+2025-12-11 01:26:26 - src.clients.telegram_bot - INFO - [POLLING] HTTP 409 Recovery: Webhook cleared
+2025-12-11 01:27:29 - src.clients.telegram_bot - WARNING - [POLLING] HTTP 409 #1: Webhook conflict - attempting recovery
+2025-12-11 01:27:30 - src.clients.telegram_bot - INFO - [POLLING] HTTP 409 Recovery: Webhook cleared
+2025-12-11 01:34:18 - src.clients.telegram_bot - WARNING - [POLLING] HTTP 409 #1: Webhook conflict - attempting recovery
+2025-12-11 01:34:19 - src.clients.telegram_bot - INFO - [POLLING] HTTP 409 Recovery: Webhook cleared
+2025-12-11 01:44:47 - src.clients.telegram_bot - WARNING - [POLLING] HTTP 409 #1: Webhook conflict - attempting recovery
+2025-12-11 01:44:48 - src.clients.telegram_bot - INFO - [POLLING] HTTP 409 Recovery: Webhook cleared
+2025-12-11 01:45:51 - src.clients.telegram_bot - WARNING - [POLLING] HTTP 409 #1: Webhook conflict - attempting recovery
+2025-12-11 01:45:52 - src.clients.telegram_bot - INFO - [POLLING] HTTP 409 Recovery: Webhook cleared
+2025-12-11 01:47:26 - src.clients.telegram_bot - WARNING - [POLLING] HTTP 409 #1: Webhook conflict - attempting recovery
+2025-12-11 01:47:27 - src.clients.telegram_bot - INFO - [POLLING] HTTP 409 Recovery: Webhook cleared
+2025-12-11 01:48:30 - src.clients.telegram_bot - WARNING - [POLLING] HTTP 409 #1: Webhook conflict - attempting recovery
+2025-12-11 01:48:31 - src.clients.telegram_bot - INFO - [POLLING] HTTP 409 Recovery: Webhook cleared
+2025-12-12 02:33:15 - __main__ - INFO - Bot starting with logging level: INFO
+2025-12-12 02:33:17 - src.managers.recovery_window_monitor - INFO - ✅ RecoveryWindowMonitor initialized
+2025-12-12 02:33:17 - src.managers.profit_protection_manager - INFO - 
+Profit Protection Settings Loaded:
+├─ Enabled: True
+├─ Mode: ⚖️ BALANCED
+├─ Multiplier: 6.0x
+├─ Min Threshold: $20.0
+├─ Order A: ON ✅
+└─ Order B: ON ✅
+        
+2025-12-12 02:33:17 - src.managers.profit_protection_manager - INFO - ✅ ProfitProtectionManager initialized
+2025-12-12 02:33:17 - src.managers.sl_reduction_optimizer - INFO - 
+SL Reduction Settings Loaded:
+├─ Enabled: True
+├─ Strategy: ⚖️ BALANCED
+├─ Reduction: 30%
+└─ Description: Recommended for most conditions
+            
+2025-12-12 02:33:17 - src.managers.sl_reduction_optimizer - INFO - ✅ SLReductionOptimizer initialized
+2025-12-12 02:33:17 - src.menu.fine_tune_menu_handler - INFO - ✅ FineTuneMenuHandler initialized (Compatible Mode)
+2025-12-12 02:33:21 - src.menu.fine_tune_menu_handler - INFO - ✅ FineTuneMenuHandler initialized (Compatible Mode)
+2025-12-12 02:33:29 - src.clients.telegram_bot - INFO - SUCCESS: Trend manager set in Telegram bot
+2025-12-12 02:33:29 - src.core.trading_engine - INFO - 📋 [RE-ENTRY_CONFIG] Startup Configuration:
+  SL Hunt Enabled: True
+  TP Re-entry Enabled: True
+  Exit Continuation Enabled: True
+  Monitor Interval: 5s
+  SL Hunt Offset: 1.0 pips
+  TP Continuation Gap: 2.0 pips
+  Max Chain Levels: 5
+  SL Reduction Per Level: 0.3
+2025-12-12 02:33:29 - src.services.price_monitor_service - INFO - ✅ Price Monitor Service started successfully - Task created: <Task pending name='Task-3' coro=<PriceMonitorService._monitor_loop() running at C:\Users\Ansh Shivaay Gupta\Downloads\ZepixTradingBot-old-v2-main\ZepixTradingBot-old-v2-main\src\services\price_monitor_service.py:129>>, is_running: True
+2025-12-12 02:33:29 - src.core.trading_engine - INFO - ✅ Price Monitor Service confirmed running after initialization
+2025-12-12 02:33:29 - src.managers.profit_booking_manager - INFO - SUCCESS: Recovered 0 profit booking chains from database
+2025-12-12 02:33:30 - src.clients.telegram_bot - INFO - [POLLING] Starting polling loop...
+2025-12-12 02:33:30 - src.clients.telegram_bot - INFO - SUCCESS: Telegram bot polling started
+2025-12-12 02:56:36 - src.menu.command_executor - INFO - EXECUTING: status with params {} for user 2139792302
+2025-12-12 02:56:36 - src.menu.command_executor - INFO - CALLING HANDLER: status with formatted params: {}
+2025-12-12 02:56:37 - src.menu.command_executor - INFO - EXECUTION SUCCESS: status executed successfully for user 2139792302
+2025-12-12 02:56:56 - src.menu.command_executor - INFO - EXECUTING: trend_matrix with params {} for user 2139792302
+2025-12-12 02:56:56 - src.menu.command_executor - INFO - CALLING HANDLER: trend_matrix with formatted params: {}
+2025-12-12 02:56:57 - src.menu.command_executor - INFO - EXECUTION SUCCESS: trend_matrix executed successfully for user 2139792302
+2025-12-12 03:07:05 - __main__ - INFO - Bot starting with logging level: INFO
+2025-12-12 03:07:05 - src.managers.recovery_window_monitor - INFO - ✅ RecoveryWindowMonitor initialized
+2025-12-12 03:07:05 - src.managers.profit_protection_manager - INFO - 
+Profit Protection Settings Loaded:
+├─ Enabled: True
+├─ Mode: ⚖️ BALANCED
+├─ Multiplier: 6.0x
+├─ Min Threshold: $20.0
+├─ Order A: ON ✅
+└─ Order B: ON ✅
+        
+2025-12-12 03:07:05 - src.managers.profit_protection_manager - INFO - ✅ ProfitProtectionManager initialized
+2025-12-12 03:07:05 - src.managers.sl_reduction_optimizer - INFO - 
+SL Reduction Settings Loaded:
+├─ Enabled: True
+├─ Strategy: ⚖️ BALANCED
+├─ Reduction: 30%
+└─ Description: Recommended for most conditions
+            
+2025-12-12 03:07:05 - src.managers.sl_reduction_optimizer - INFO - ✅ SLReductionOptimizer initialized
+2025-12-12 03:07:05 - src.menu.fine_tune_menu_handler - INFO - ✅ FineTuneMenuHandler initialized (Compatible Mode)
+2025-12-12 03:07:09 - src.menu.fine_tune_menu_handler - INFO - ✅ FineTuneMenuHandler initialized (Compatible Mode)
+2025-12-12 03:07:10 - src.clients.telegram_bot - INFO - SUCCESS: Trend manager set in Telegram bot
+2025-12-12 03:07:10 - src.core.trading_engine - INFO - 📋 [RE-ENTRY_CONFIG] Startup Configuration:
+  SL Hunt Enabled: True
+  TP Re-entry Enabled: True
+  Exit Continuation Enabled: True
+  Monitor Interval: 5s
+  SL Hunt Offset: 1.0 pips
+  TP Continuation Gap: 2.0 pips
+  Max Chain Levels: 5
+  SL Reduction Per Level: 0.3
+2025-12-12 03:07:10 - src.services.price_monitor_service - INFO - ✅ Price Monitor Service started successfully - Task created: <Task pending name='Task-3' coro=<PriceMonitorService._monitor_loop() running at C:\Users\Ansh Shivaay Gupta\Downloads\ZepixTradingBot-old-v2-main\ZepixTradingBot-old-v2-main\src\services\price_monitor_service.py:129>>, is_running: True
+2025-12-12 03:07:10 - src.core.trading_engine - INFO - ✅ Price Monitor Service confirmed running after initialization
+2025-12-12 03:07:10 - src.managers.profit_booking_manager - INFO - SUCCESS: Recovered 0 profit booking chains from database
+2025-12-12 03:07:11 - src.clients.telegram_bot - INFO - [POLLING] Starting polling loop...
+2025-12-12 03:07:11 - src.clients.telegram_bot - INFO - SUCCESS: Telegram bot polling started
+2025-12-12 03:07:43 - src.menu.command_executor - INFO - EXECUTING: trend_matrix with params {} for user 2139792302
+2025-12-12 03:07:43 - src.menu.command_executor - INFO - CALLING HANDLER: trend_matrix with formatted params: {}
+2025-12-12 03:07:44 - src.menu.command_executor - INFO - EXECUTION SUCCESS: trend_matrix executed successfully for user 2139792302
+2025-12-12 03:08:57 - __main__ - INFO - Bot starting with logging level: INFO
+2025-12-12 03:08:58 - src.managers.recovery_window_monitor - INFO - ✅ RecoveryWindowMonitor initialized
+2025-12-12 03:08:58 - src.managers.profit_protection_manager - INFO - 
+Profit Protection Settings Loaded:
+├─ Enabled: True
+├─ Mode: ⚖️ BALANCED
+├─ Multiplier: 6.0x
+├─ Min Threshold: $20.0
+├─ Order A: ON ✅
+└─ Order B: ON ✅
+        
+2025-12-12 03:08:58 - src.managers.profit_protection_manager - INFO - ✅ ProfitProtectionManager initialized
+2025-12-12 03:08:58 - src.managers.sl_reduction_optimizer - INFO - 
+SL Reduction Settings Loaded:
+├─ Enabled: True
+├─ Strategy: ⚖️ BALANCED
+├─ Reduction: 30%
+└─ Description: Recommended for most conditions
+            
+2025-12-12 03:08:58 - src.managers.sl_reduction_optimizer - INFO - ✅ SLReductionOptimizer initialized
+2025-12-12 03:08:58 - src.menu.fine_tune_menu_handler - INFO - ✅ FineTuneMenuHandler initialized (Compatible Mode)
+2025-12-12 03:09:01 - src.menu.fine_tune_menu_handler - INFO - ✅ FineTuneMenuHandler initialized (Compatible Mode)
+2025-12-12 03:09:02 - src.clients.telegram_bot - INFO - SUCCESS: Trend manager set in Telegram bot
+2025-12-12 03:09:02 - src.core.trading_engine - INFO - 📋 [RE-ENTRY_CONFIG] Startup Configuration:
+  SL Hunt Enabled: True
+  TP Re-entry Enabled: True
+  Exit Continuation Enabled: True
+  Monitor Interval: 5s
+  SL Hunt Offset: 1.0 pips
+  TP Continuation Gap: 2.0 pips
+  Max Chain Levels: 5
+  SL Reduction Per Level: 0.3
+2025-12-12 03:09:02 - src.services.price_monitor_service - INFO - ✅ Price Monitor Service started successfully - Task created: <Task pending name='Task-3' coro=<PriceMonitorService._monitor_loop() running at C:\Users\Ansh Shivaay Gupta\Downloads\ZepixTradingBot-old-v2-main\ZepixTradingBot-old-v2-main\src\services\price_monitor_service.py:129>>, is_running: True
+2025-12-12 03:09:02 - src.core.trading_engine - INFO - ✅ Price Monitor Service confirmed running after initialization
+2025-12-12 03:09:02 - src.managers.profit_booking_manager - INFO - SUCCESS: Recovered 0 profit booking chains from database
+2025-12-12 03:09:03 - src.clients.telegram_bot - INFO - [POLLING] Starting polling loop...
+2025-12-12 03:09:03 - src.clients.telegram_bot - INFO - SUCCESS: Telegram bot polling started
+2025-12-12 03:14:55 - __main__ - INFO - Bot starting with logging level: INFO
+2025-12-12 03:14:55 - src.managers.recovery_window_monitor - INFO - ✅ RecoveryWindowMonitor initialized
+2025-12-12 03:14:55 - src.managers.profit_protection_manager - INFO - 
+Profit Protection Settings Loaded:
+├─ Enabled: True
+├─ Mode: ⚖️ BALANCED
+├─ Multiplier: 6.0x
+├─ Min Threshold: $20.0
+├─ Order A: ON ✅
+└─ Order B: ON ✅
+        
+2025-12-12 03:14:55 - src.managers.profit_protection_manager - INFO - ✅ ProfitProtectionManager initialized
+2025-12-12 03:14:55 - src.managers.sl_reduction_optimizer - INFO - 
+SL Reduction Settings Loaded:
+├─ Enabled: True
+├─ Strategy: ⚖️ BALANCED
+├─ Reduction: 30%
+└─ Description: Recommended for most conditions
+            
+2025-12-12 03:14:55 - src.managers.sl_reduction_optimizer - INFO - ✅ SLReductionOptimizer initialized
+2025-12-12 03:14:55 - src.menu.fine_tune_menu_handler - INFO - ✅ FineTuneMenuHandler initialized (Compatible Mode)
+2025-12-12 03:14:59 - src.menu.fine_tune_menu_handler - INFO - ✅ FineTuneMenuHandler initialized (Compatible Mode)

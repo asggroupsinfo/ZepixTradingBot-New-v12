@@ -1,13 +1,27 @@
-from typing import Dict, Any, Optional
-from datetime import datetime
 import json
 import os
+import pathlib
+from datetime import datetime
+from typing import Dict, Any, Optional
 
 class TimeframeTrendManager:
     """Manage trends per timeframe instead of per logic"""
     
-    def __init__(self, config_file="config/timeframe_trends.json"):
-        self.config_file = config_file
+    def __init__(self, config_file: str = "config/timeframe_trends.json"):
+        # Resolve absolute path to ensure persistence works regardless of CWD
+        # Assume this file is in src/managers/
+        # Root is 2 levels up from src/managers -> src -> root
+        current_dir = pathlib.Path(__file__).parent.absolute()
+        project_root = current_dir.parent.parent
+        
+        # If config_file is relative, make it absolute relative to project root
+        if not os.path.isabs(config_file):
+            self.config_file = str(project_root / config_file)
+        else:
+            self.config_file = config_file
+            
+        print(f"DEBUG: TimeframeTrendManager using config file: {self.config_file}")
+        
         self.trends = self.load_trends()
         
     def load_trends(self) -> Dict[str, Any]:
@@ -15,15 +29,26 @@ class TimeframeTrendManager:
         try:
             if os.path.exists(self.config_file) and os.path.getsize(self.config_file) > 0:
                 with open(self.config_file, 'r') as f:
-                    return json.load(f)
+                    data = json.load(f)
+                    print(f"SUCCESS: Loaded trends from {self.config_file}")
+                    # Debug: Print summary of loaded manual trends
+                    manual_count = 0
+                    for sym, tfs in data.get("symbols", {}).items():
+                        for tf, details in tfs.items():
+                            if details.get("mode") == "MANUAL":
+                                manual_count += 1
+                                print(f"DEBUG: Loaded MANUAL trend for {sym} {tf}: {details.get('trend')}")
+                    print(f"DEBUG: Total manual trends loaded: {manual_count}")
+                    return data
             else:
+                print(f"WARNING: Trends file not found or empty at {self.config_file}, using defaults")
                 # Return default structure if file doesn't exist or is empty
                 return {
                     "symbols": {},
                     "default_mode": "AUTO"
                 }
         except (json.JSONDecodeError, Exception) as e:
-            print(f"WARNING: Trends file corrupted, using defaults: {str(e)}")
+            print(f"WARNING: Trends file corrupted at {self.config_file}, using defaults: {str(e)}")
             return {
                 "symbols": {},
                 "default_mode": "AUTO"
@@ -32,10 +57,14 @@ class TimeframeTrendManager:
     def save_trends(self):
         """Save trends to file"""
         try:
+            # Ensure directory exists
+            os.makedirs(os.path.dirname(self.config_file), exist_ok=True)
+            
             with open(self.config_file, 'w') as f:
                 json.dump(self.trends, f, indent=4)
+            # print(f"DEBUG: Saved trends to {self.config_file}") 
         except Exception as e:
-            print(f"ERROR: Error saving trends: {str(e)}")
+            print(f"ERROR: Error saving trends to {self.config_file}: {str(e)}")
     
     def update_trend(self, symbol: str, timeframe: str, signal: str, mode: str = "AUTO"):
         """Update trend for a specific symbol and timeframe"""
@@ -60,6 +89,14 @@ class TimeframeTrendManager:
             trend = "BEARISH"
         else:
             trend = "NEUTRAL"
+            
+        # Check if trend is already the same
+        current_trend = current.get("trend")
+        current_mode = current.get("mode")
+        
+        if current_trend == trend and current_mode == mode:
+            print(f"INFO: Trend already {trend} ({mode}) for {symbol} {timeframe}, ignoring update")
+            return False
         
         self.trends["symbols"][symbol][timeframe] = {
             "trend": trend,
@@ -68,6 +105,7 @@ class TimeframeTrendManager:
         }
         self.save_trends()
         print(f"SUCCESS: Trend updated: {symbol} {timeframe} -> {trend} ({mode})")
+        return True
     
     def get_trend(self, symbol: str, timeframe: str) -> Optional[str]:
         """Get trend for a specific symbol and timeframe"""

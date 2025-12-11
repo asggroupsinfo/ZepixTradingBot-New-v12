@@ -92,9 +92,16 @@ class AlertProcessor:
                 # Get current trend from trend_manager
                 current_trend = self.trend_manager.get_trend(alert.symbol, alert.tf)
                 
-                # FIX #2: Only check trend VALUE, ignore mode (manual/auto switch shouldn't bypass duplicate check)
-                if current_trend and current_trend.lower() == alert.signal.lower():
-                    print(f"INFO: Duplicate trend detected - {alert.symbol} {alert.tf.upper()} is already {alert.signal.upper()}")
+                # Normalize alert signal to match stored format (BEARISH/BULLISH)
+                signal_normalized = alert.signal.upper()
+                if signal_normalized in ['BEAR', 'SELL', 'BEARISH']:
+                    signal_normalized = 'BEARISH'
+                elif signal_normalized in ['BULL', 'BUY', 'BULLISH']:
+                    signal_normalized = 'BULLISH'
+                
+                # Check if trend matches
+                if current_trend and current_trend == signal_normalized:
+                    print(f"INFO: Duplicate trend detected - {alert.symbol} {alert.tf.upper()} is already {signal_normalized}")
                     return True  # Duplicate regardless of mode
             except Exception as e:
                 # If trend check fails, fall through to normal duplicate detection
